@@ -20,9 +20,7 @@ function guessingGame(){
         } else{
             alert("Congratz! :)")
         }
-    } while(randomNumber != guess
-        
-        )
+    } while(randomNumber != guess)
 }
 
 guessingGame(); 
