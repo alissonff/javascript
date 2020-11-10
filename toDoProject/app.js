@@ -50,7 +50,12 @@ function deleteCheck(e){
     const item = e.target;
     if(item.classList[0] === "delete-btn"){
         const todo = item.parentElement;
-        todo.remove();
+        //animation 
+        todo.classList.add('fall'); 
+        todo.addEventListener('transitionend', function(){
+            todo.remove();
+        });      
+        
     }
 
     if (item.classList[0] === "complete-btn"){
