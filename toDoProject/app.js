@@ -44,7 +44,7 @@ function addTodo(event){
     todoInput.value = "";
 }
 
-//delete function
+//delete and check function
 
 function deleteCheck(e){
     const item = e.target;
